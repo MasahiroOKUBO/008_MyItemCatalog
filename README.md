@@ -9,9 +9,15 @@ Python 2.7
 git clone https://github.com/MasahiroOKUBO/008_MyItemCatalog.git
 ```
 
-## DB Setup
+## Edit Client Secret Clone
 ```
 cd 008_MyItemCatalog/
+vi client_secret_facebook.json
+vi client_secret_google.json
+```
+
+## DB Setup
+```
 python database_setup.py
 ```
 
