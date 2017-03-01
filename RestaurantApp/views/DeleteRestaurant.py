@@ -35,7 +35,9 @@ def deleteRestaurant(restaurant_id):
     if 'username' not in login_session:
         return redirect('/login')
     if restaurantToDelete.user_id != login_session['user_id']:
-        return "<script>function myFunction() {alert('You are not authorized to delete this restaurant. Please create your own restaurant in order to delete.');}</script><body onload='myFunction()''>"
+        snippet_JS = "<script>function myFunction() {alert('You are not authorized to delete this restaurant." \
+                     "Please create your own restaurant in order to delete.');}</script><body onload='myFunction()''>"
+        return snippet_JS
     if request.method == 'POST':
         session.delete(restaurantToDelete)
         flash('%s Successfully Deleted' % restaurantToDelete.name)
