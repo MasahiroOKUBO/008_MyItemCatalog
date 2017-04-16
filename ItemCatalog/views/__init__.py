@@ -1,4 +1,4 @@
-from show_top import ShowNewArrival
+from show_new_arrival import ShowNewArrival
 from show_your_exhibit import ShowYourExhibit
 from show_all_category import ShowAllCategory
 from show_category_items import ShowCategoryItems
