@@ -1,4 +1,4 @@
-from ItemCatalog.models import User
+# from ItemCatalog.models import User
 from setup_database import db_session
 
 
